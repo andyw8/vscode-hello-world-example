@@ -11,7 +11,8 @@
   ],
   "activationEvents": [
     "onCommand:helloworld.helloWorld",
-    "onCommand:helloworld.showCurrentTime"
+    "onCommand:helloworld.showCurrentTime",
+    "onCommand:helloworld.showWarningExample"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -23,6 +24,10 @@
       {
         "command": "helloworld.showCurrentTime",
         "title": "Show current time"
+      },
+      {
+        "command": "helloworld.showWarningExample",
+        "title": "Show warning example"
       }
     ]
   },
