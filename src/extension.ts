@@ -20,6 +20,12 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	context.subscriptions.push(disposable);
+
+	let disposable2 = vscode.commands.registerCommand('helloworld.showCurrentTime', () => {
+		vscode.window.showInformationMessage('current time: ' + new Date().toLocaleTimeString());
+	});
+
+	context.subscriptions.push(disposable2);
 }
 
 // This method is called when your extension is deactivated
